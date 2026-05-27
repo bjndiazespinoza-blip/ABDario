@@ -2,7 +2,7 @@
 const colores = ["#008000", "#0000FF", "#FF0000"];
 
 //Etiquetas H3 y h5//
-const etiquetasH3 = document.querySelectorAll("h3, h5");
+const etiquetasH3 = document.querySelectorAll("h1, h3, h5");
 
 //Función que retorna color aleatorio del arreglo//
 

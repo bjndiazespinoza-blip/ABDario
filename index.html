@@ -14,17 +14,47 @@
 
     <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm text-center">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">
-                    ABCdario
-                </a>
+
+                <!-- Logo -->
+                <h1><a class="navbar-brand fw-bold" href="#">
+                        ABCdario
+                    </a></h1>
+
+                <!-- Botón responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                    aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="contactos.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="py-5">
+    <main class="pt-5 mt-5">
 
         <section class="container">
 
@@ -38,7 +68,9 @@
                     Cada letra tiene una imagen representativa
                 </p>
 
-                <button type="button" class="btn btn-light"><h5>Cambio de color</h5></button>
+                <button type="button" class="btn btn-light">
+                    <h5>Cambio de color</h5>
+                </button>
             </div>
 
             <!-- CARDS -->
@@ -183,7 +215,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card shadow border-0 h-100">
 
-                        <img src="assets/img/10.jpeg" class="card-img-top" alt="Letra D">
+                        <img src="assets/img/10.jpg" class="card-img-top" alt="Letra D">
 
                         <div class="card-body text-center">
                             <h3 class="fw-bold">
@@ -244,7 +276,7 @@
                     <div class="card shadow border-0 h-100">
 
                         <img src="assets/img/14.jpg" class="card-img-top" alt="Letra D">
-                        
+
 
                         <div class="card-body text-center">
                             <h3 class="fw-bold">
@@ -424,7 +456,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card shadow border-0 h-100">
 
-                        <img src="assets/img/26.jpg" class="card-img-top" alt="Letra D">
+                        <img src="assets/img/26.jpeg" class="card-img-top" alt="Letra D">
 
                         <div class="card-body text-center">
                             <h3 class="fw-bold">
@@ -460,9 +492,25 @@
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0">
-            © 2026 ABCdario Infantil
-        </p>
+        <div class="contactos">
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex gap-2 justify-content-center">
+                    <p>Luis</p>
+                    <p>Benja</p>
+                    <p>Jorge</p>
+                    <p>Matias</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>sobreviviendo@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="mb-0">
+                        © 2026 ABCdario Infantil
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <!-- Bootstrap JS -->
