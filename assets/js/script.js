@@ -1,3 +1,5 @@
+//* Creación código script.js *//
+
 // Definiendo colores //
 const colores = ["#008000", "#0000FF", "#FF0000"];
 
