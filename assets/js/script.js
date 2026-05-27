@@ -1,8 +1,8 @@
 // Definiendo colores //
-const colores = ["green", "blue", "red"];
+const colores = ["#008000", "#0000FF", "#FF0000"];
 
-//Etiquetas h5//
-const etiquetasH5 = document.querySelectorAll("h5");
+//Etiquetas H3 y h5//
+const etiquetasH3 = document.querySelectorAll("h3, h5");
 
 //Función que retorna color aleatorio del arreglo//
 
@@ -11,10 +11,9 @@ function obtenerColorAleatorio() {
   return colores[indiceAleatorio];
 }
 
-//Recorriendo cada etiqueta h5 y asignando un color aleatorio//
-etiquetasH5.forEach(function(etiqueta) {
+// Recorriendo cada etiqueta H3 y h5 y asignando un color aleatorio
+etiquetasH3.forEach(function(etiqueta) {
     etiqueta.addEventListener("click", function() {
-        const colorAleatorio = obtenerColorAleatorio();
-        etiqueta.style.color = colorAleatorio;
-    }
-})
+        this.style.color = obtenerColorAleatorio();
+    });
+});
