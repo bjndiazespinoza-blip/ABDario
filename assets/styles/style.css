@@ -1,0 +1,15 @@
+body {
+    background-color: gray;
+}
+
+h3 {
+    color: green;
+}
+
+.blue-headers {
+    color: blue;
+}
+
+#red-header {
+    color: red;
+}
